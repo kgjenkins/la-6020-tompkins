@@ -14,30 +14,61 @@ After downloading the zip file, be sure to UNZIP it!  (Right-click > Extract All
 
 # Loading data into ArcGIS Pro
 
-1. Shapefiles - drag the .shp file onto the map
-2. Geopackage - Map menu > Add data > browse to .gpkg file and select layer
-3. GeoTIFF - drag the .tif file onto the map
-4. GTFS - use the "GTFS Shapes to Features" tool for route lines
+- Shapefiles: drag the .shp file onto the map
+- Geopackage: Map menu > Add data > browse to .gpkg file and select layer
+- GeoTIFF: drag the .tif file onto the map
+- GTFS: use the "GTFS Shapes to Features" tool for route lines
     or the "GTFS Stops to Features" tool for stop points
+
+Set the symbology as desired:
+- Double-click the symbol in the Contents pane to open the symbology panel
+- There are many options!  Use the back arrow at top of symbology panel to get back to the top level
+
+Show labels when needed:
+- Right-click the layer > Labels (to toggle on/off)
+- Right-click the layer > Label Properties
+    - Set the "Expression" to control what information is displayed
+    - Set the "Symbol" to control how it is displayed
+
+# Making a subset of features
+
+- Map menu > Select
+- Click to select first feature, shift-click to add additional features to the selection
+- Right-click the layer to export from > Data > Export Features
+    - Save as a layer in your geodatabase, or to an independent shapefile
 
 
 # Measuring distances
 
-1. Straight-line distances
-2. Network distance (along a road network)
+- Straight-line distances: Map menu > Measure tool
+- Network distance (along a road network): Analysis menu > Network Analysis > Route
+    - Select "Stops" layer
+    - Route Layer menu > Create Features (or import stops from an existing layer)
+    - Estimate Credits, then Run
+- Service areas: Analysis menu > Network Analysis > Service Area
+    - Select "Facilities" layer
+    - Service Area Layer menu > Create features (or import from existing layer)
+    - Estimate Credits, then Run
 
+If importing points from an existing layer, note that you can make a selection of points and just import those.
+
+
+# Calculating road slope
+
+- Load the roads and elevation data
+- Geoprocessing tool "Add Surface Information"
 
 
 # Data Sources
 
-Elevation: https://cugir.library.cornell.edu/catalog/cugir-009096 (1 arcsec = 30m pixels)
-  see also https://cugir.library.cornell.edu/catalog/cugir-009000 (1/3 arcsec = 10m pixels)
-  see also https://gis.ny.gov/nys-dem#nys-high-resolution-dem (1m pixels)
-Land Use: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::tompkins-county-natural-resources-inventory-old/about?layer=24
-Parcels: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::parcels-public/about
-Roads: https://gis.ny.gov/streets-addresses#nys-streets-data
-Tourism: OpenStreetMap data via https://export.hotosm.org/v3/
-Traffic: https://nysdottrafficdata.drakewell.com/publicmultinodemap.asp
-Trails: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::trails-2020/about
-Transit: https://www.transit.land/feeds/f-dr997-tompkinsconsolidatedareatransit
+- Elevation: https://cugir.library.cornell.edu/catalog/cugir-009096 (1 arcsec = 30m pixels)
+    - see also https://cugir.library.cornell.edu/catalog/cugir-009000 (1/3 arcsec = 10m pixels)
+    - see also https://gis.ny.gov/nys-dem#nys-high-resolution-dem (1m pixels)
+- Land Use: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::tompkins-county-natural-resources-inventory-old/about?layer=24
+- Parcels: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::parcels-public/about
+- Roads: https://gis.ny.gov/streets-addresses#nys-streets-data
+- Tourism: OpenStreetMap data via https://export.hotosm.org/v3/
+- Traffic: https://nysdottrafficdata.drakewell.com/publicmultinodemap.asp
+- Trails: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::trails-2020/about
+- Transit: https://www.transit.land/feeds/f-dr997-tompkinsconsolidatedareatransit
 
