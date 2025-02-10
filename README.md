@@ -60,19 +60,19 @@ If importing points from an existing layer, note that you can make a selection o
 
 - Load the roads and elevation data
 - Geoprocessing tool "Add Surface Information"
-- Try adding labels for Avg_Slope, and set the symbology to graduated colors based on the Avg_Slope
+- Try adding labels for "Avg_Slope", and set the symbology to graduated colors based on "Avg_Slope"
 
 
 # Data Sources
 
-- Elevation: https://cugir.library.cornell.edu/catalog/cugir-009096 (1 arcsec = 30m pixels)
-    - see also https://cugir.library.cornell.edu/catalog/cugir-009000 (1/3 arcsec = 10m pixels)
-    - see also https://gis.ny.gov/nys-dem#nys-high-resolution-dem (1m pixels)
-- Land Use: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::tompkins-county-natural-resources-inventory-old/about?layer=24
-- Parcels: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::parcels-public/about
-- Roads: https://gis.ny.gov/streets-addresses#nys-streets-data
-- Tourism: OpenStreetMap data via https://export.hotosm.org/v3/
-- Traffic: https://nysdottrafficdata.drakewell.com/publicmultinodemap.asp
-- Trails: https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::trails-2020/about
-- Transit: https://www.transit.land/feeds/f-dr997-tompkinsconsolidatedareatransit
+- Elevation: <https://cugir.library.cornell.edu/catalog/cugir-009096> (1 arcsec = 30m pixels)
+    - see also <https://cugir.library.cornell.edu/catalog/cugir-009000> (1/3 arcsec = 10m pixels)
+    - see also <https://gis.ny.gov/nys-dem#nys-high-resolution-dem> (1m pixels)
+- Land Use: <https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::tompkins-county-natural-resources-inventory-old/about?layer=24>
+- Parcels: <https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::parcels-public/about>
+- Roads: <https://gis.ny.gov/streets-addresses#nys-streets-data>
+- Tourism: OpenStreetMap data via <https://export.hotosm.org/v3/>
+- Traffic: <https://nysdottrafficdata.drakewell.com/publicmultinodemap.asp>
+- Trails: <https://tcdata-tompkinscounty.opendata.arcgis.com/datasets/tompkinscounty::trails-2020/about>
+- Transit: <https://www.transit.land/feeds/f-dr997-tompkinsconsolidatedareatransit>
 
