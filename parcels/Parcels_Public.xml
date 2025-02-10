@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20230719</pubdate>
+                <title>Parcels_Public</title>
+                <geoform>vector digital data</geoform>
+                <onlink>https://services.arcgis.com/oJbAAWNInLrxvF0A/arcgis/rest/services/Parcels_Public/FeatureServer</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Tompkins County property data for tax year 2024. Please note that parcel data are distributed annually. Although this application is provided by the Tompkins County GIS Division, we are not the authoritative source of the data or any derivatives therein. Please contact the Tompkins County  Assessment Department at 274-5517 for specific information regarding current ownership, boundary changes, property tax information, and other property related questions.Please note that agricultural district info has been removed from this layer since the Assessment department does not maintain agricultural districts.If you are interested in agricultural district information, please see Cornell Cooperative Extension Ag District Page.Parcel data last uploaded:August 16, 2024 , Parcel data updated September 20, 2024</abstract>
+            <purpose>Public parcel data no ownership or mailing owner info for the 2024 tax year.</purpose>
+            <supplinf>For public use in publically available online applications and distribution.</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <rngdates>
+                    <begdate>20220701</begdate>
+                    <enddate>20230714</enddate>
+                </rngdates>
+            </timeinfo>
+            <current>Parcel data from the tax mapping process are extracted and joined annually. The data represents parcels and records from July 1st of each year to July first of the following year. In this case Juky 1, 2022 to July 14th 2023  (final date that the extract was produced from all pertinent tables in the RPS.</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>Annually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-76.67664345699865</westbc>
+                <eastbc>-76.26464345699866</eastbc>
+                <northbc>42.65533488499933</northbc>
+                <southbc>42.24333488499932</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>boundaries</themekey>
+                <themekey>planningCadastre</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>Tompkins County New York</placekey>
+            </place>
+        </keywords>
+        <accconst>Other Constraints</accconst>
+        <useconst>Access: Open to the public.Disclaimer: The information provided within these applications are for your convenience, and the data provided herein is for general reference only. These products are for informational purposes and may not have been prepared for or be suitable for legal, engineering, or surveying purposes. It does not represent an on-the-ground survey and represents only the approximate relative location of property boundaries. Verifying the accuracy of all information provided here is the responsibility of the user. Maps may be printed for your convenience, with the understanding that they will be used for general reference only, without any claims of completeness or accuracy.  As stated above Parcel data is provided annually by the Tompkins County Assessment Department any questions on the data herein or any additional data should be directed to the Assessment Department.</useconst>
+        <datacred>Tompkins County Assessment Department, Compiled and distributed by Tompkins County GIS Division.</datacred>
+        <native>ArcGIS Desktop 10.8.2</native>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>FID</enttypl>
+                <enttypd>Sequential unique whole numbers that are automatically generated.</enttypd>
+                <enttypds>ESRI</enttypds>
+            </enttyp>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>OBJECTID</enttypl>
+                <enttypd>Sequential unique whole numbers that are automatically generated.</enttypd>
+                <enttypds>ESRI</enttypds>
+            </enttyp>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>Shape</enttypl>
+                <enttypd>Feature geometry</enttypd>
+                <enttypds>ESRI</enttypds>
+            </enttyp>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>PARCELKEY</enttypl>
+                <enttypd>Real Property Services (RPS) database parcel key (Swis-Section-Block-Lot or SSBL). This field is updated yearly based on the GIS extract of the final-roll from Assessment's RPS database</enttypd>
+                <enttypds>Tompkins County Assessment and Tompkins County ITS GIS</enttypds>
+            </enttyp>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>SWISPRINTK</enttypl>
+                <enttypd>Concatenation of SWIS code, "-", and the PRINTKEY field, for those polygons without an account number (ie, a blank "ACCT_NUM"), or a concatenation of SWIS code, "-", and the "ACCT_NUM" field, for those polygons with an account number. This field is easily reproducible within the Real Property Services database extract, and is used as the primary join (key) field to the RPS extract from the parcel data sets.</enttypd>
+                <enttypds>Tompkins County Assessment and Tompkins County ITS GIS</enttypds>
+            </enttyp>
+        </detailed>
+        <detailed>
+            <enttyp>
+                <enttypl>SWIS</enttypl>
+                <enttypd>State SWIS code for the municipality in which the property is located.</enttypd>
+                <enttypds>Tompkins County Assessment, Tompkins County ITS GIS, and New York State Real Property Services</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>SWIS</attrlabl>
+                <attrdef>State SWIS code for the municipality in which the property is located</attrdef>
+                <attrdefs>Tompkins County Assessment, Tompkins County ITS GIS, and New York State Real Property Services</attrdefs>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>500200</edomv>
+                                                						
+                        
+                        <edomvd>Town of Danby</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502401</edomv>
+                                                						
+                        
+                        <edomvd>Village of Dryden</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502403</edomv>
+                                                						
+                        
+                        <edomvd>Village of Freeville</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502489</edomv>
+                                                						
+                        
+                        <edomvd>Town of Dryden</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502600</edomv>
+                                                						
+                        
+                        <edomvd>Town of Newfield</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502801</edomv>
+                                                						
+                        
+                        <edomvd>Village of Groton</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502889</edomv>
+                                                						
+                        
+                        <edomvd>Town of Groton</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503001</edomv>
+                                                						
+                        
+                        <edomvd>Village of Cayuga Heights</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503089</edomv>
+                                                						
+                        
+                        <edomvd>Town of Ithaca</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503201</edomv>
+                                                						
+                        
+                        <edomvd>Village of Lansing</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503289</edomv>
+                                                						
+                        
+                        <edomvd>Town of Lansing</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503400</edomv>
+                                                						
+                        
+                        <edomvd>Town of Newfield</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503601</edomv>
+                                                						
+                        
+                        <edomvd>Village of Trumansburg</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>503689</edomv>
+                                                						
+                        
+                        <edomvd>Town of Ulysses</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>500700</edomv>
+                                                						
+                        
+                        <edomvd>City of Ithaca</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>502600</edomv>
+                                                						
+                        
+                        <edomvd>Town of Enfield</edomvd>
+                                                						
+                        
+                        <edomvds>New York State Office of Real Property Services</edomvds>
+                                                					
+                    
+                    </edom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20230719</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Tompkins County ITS GIS Division</cntorg>
+                    <cntper>Cattyann Campbell</cntper>
+                </cntorgp>
+                <cntpos>GIS Administrator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>128 E Buffalo St</address>
+                    <city>Ithaca</city>
+                    <state>NY</state>
+                    <postal>14850</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntvoice>6072745418</cntvoice>
+                <cntfax>6072745420</cntfax>
+                <cntemail>gis@tompkins-co.org</cntemail>
+                <hours>M-F 8:00 AM to 4:30 PM</hours>
+                <cntinst>Email preferred</cntinst>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
