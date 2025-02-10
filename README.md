@@ -30,6 +30,9 @@ Show labels when needed:
     - Set the "Expression" to control what information is displayed
     - Set the "Symbol" to control how it is displayed
 
+For the traffic data, you'll want to label with the "aadt" field (Annual Average Daily Traffic)
+
+
 # Making a subset of features
 
 - Map menu > Select
@@ -57,6 +60,7 @@ If importing points from an existing layer, note that you can make a selection o
 
 - Load the roads and elevation data
 - Geoprocessing tool "Add Surface Information"
+- Try adding labels for Avg_Slope, and set the symbology to graduated colors based on the Avg_Slope
 
 
 # Data Sources
